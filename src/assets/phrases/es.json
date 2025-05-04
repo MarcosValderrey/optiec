@@ -62,6 +62,9 @@
             }
         },
         "order": {
+            "OrderPreview": {
+                "noPreview": "No hay vista previa disponible para mostrar"
+            },
             "OrderResults": {
                 "height":"Altura ({{units}})",
                 "leftovers": "Sobrantes",
@@ -87,6 +90,11 @@
                     "author": "Autor"
                 }
             },
+            "HomePage": {
+                "title": "Instituto de Enseñanza de la Construcción",
+                "subtitle": "Optimizador de Cortes",
+                "start": "Comenzar"
+            },
             "InstructionsPage": {
                 "title": "Instrucciones",
                 "subtitle": "Detalles sobre cómo utilizar el optimizador",
@@ -106,7 +114,10 @@
                 "subtitle": "Dispone cortes en MDF utilizando un algoritmo greedy simple",
                 "steps": {
                     "1": {
-                        "title": "Selección de Placas ({{count}})",
+                        "title": {
+                            "none": "Selección de Placas",
+                            "positive": "Selección de Placas ({{count}})"
+                        },
                         "subtitle": "Indicá qué placas vas a utilizar en el proceso de corte",
                         "warning": {
                             "title": "Advertencia",
@@ -118,7 +129,10 @@
                         "subtitle": "Indicá qué cortes necesitas realizar sobre las placas"
                     },
                     "3": {
-                        "title": "Vista Previa",
+                        "title": {
+                            "none": "Vista Previa",
+                            "positive": "Vista Previa ({{count}})"
+                        },
                         "subtitle": ""
                     },
                     "4": {

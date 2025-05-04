@@ -62,6 +62,9 @@
             }
         },
         "order": {
+            "OrderPreview": {
+                "noPreview": "There is no preview to display"
+            },
             "OrderResults": {
                 "height":"Height ({{units}})",
                 "leftovers": "Leftovers",
@@ -87,6 +90,11 @@
                     "author": "Author"
                 }
             },
+            "HomePage": {
+                "title": "Instituto de Enseñanza de la Construcción",
+                "subtitle": "Cut Optimizer",
+                "start": "Start"
+            },
             "InstructionsPage": {
                 "title": "Instructions",
                 "subtitle": "Details about usage of this tool",
@@ -106,7 +114,10 @@
                 "subtitle": "Arrange MFD cuts using a simple greedy algorithm",
                 "steps": {
                     "1": {
-                        "title": "Plaques Selection ({{count}})",
+                        "title": {
+                            "none": "Plaques Selection",
+                            "positive": "Plaques Selection ({{count}})"
+                        },
                         "subtitle": "Indicate which plaques will be selectable in the cut process",
                         "warning": {
                             "title": "Warning",
@@ -118,7 +129,10 @@
                         "subtitle": "Indicate which cuts you need to get over the plaques"
                     },
                     "3": {
-                        "title": "Preview",
+                        "title": {
+                            "none": "Preview",
+                            "positive": "Preview ({{count}})"
+                        },
                         "subtitle": ""
                     },
                     "4": {

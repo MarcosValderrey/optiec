@@ -64,7 +64,7 @@ function OrderResults({ order }) {
             {cutResultsGallery}
         </>;
     } else {
-        render = <Alert key='results.noOptimizationAvailable' variant='light'>
+        render = <Alert key='components.order.OrderResults.noOptimization' variant='light'>
             {phrases.get('components.order.OrderResults.noOptimization')}
         </Alert>;
     }

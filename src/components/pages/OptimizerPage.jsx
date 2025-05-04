@@ -104,16 +104,26 @@ function OptimizerPage() {
         });
     };
 
-    console.log(order);
-
     var titles = {};
-    if (order && order.plaques) {
-        titles['1'] = phrases.get('components.pages.OptimizerPage.steps.1.title', { count: order.plaques.length });
+
+    // Plaques Selection
+    titles['1'] = phrases.get('components.pages.OptimizerPage.steps.1.title.none');
+    if (order && order.plaques && order.plaques.length > 0) {
+        titles['1'] = phrases.get('components.pages.OptimizerPage.steps.1.title.positive', { count: order.plaques.length });
     }
+
+    // Cut Instructions
     if (order && order.cuts) {
         titles['2'] = phrases.get('components.pages.OptimizerPage.steps.2.title', { count: order.cuts.length });
     }
-    titles['3'] = phrases.get('components.pages.OptimizerPage.steps.3.title');
+
+    // Preview
+    titles['3'] = phrases.get('components.pages.OptimizerPage.steps.3.title.none');
+    if (order && order.plaques && order.plaques.length > 0) {
+        titles['3'] = phrases.get('components.pages.OptimizerPage.steps.3.title.positive', { count: order.plaques.length });
+    }
+
+    // Results
     titles['4'] = phrases.get('components.pages.OptimizerPage.steps.4.title.none');
     if (order && order.optimized && order.optimized.cutResults) {
         titles['4'] = phrases.get('components.pages.OptimizerPage.steps.4.title.positive', { count: order.optimized.cutResults.length });
