@@ -1,0 +1,179 @@
+{
+    "App": {
+        "paths": {
+            "optimizer": "/optimizer",
+            "instructions": "/instructions",
+            "materials": "/materials",
+            "plaques": "/plaques",
+            "configuration": "/configuration",
+            "details": "/details"
+        }
+    },
+    "components": {
+        "common": {
+            "DeleteModal": {
+                "cancel": "Cancel",
+                "delete": "Delete"
+            },
+            "Header": {
+                "optimizer": "Optimizer",
+                "instructions": "Instructions",
+                "materials": "Materials",
+                "plaques": "Plaques",
+                "configuration": "Configuration",
+                "about": "About"
+            },
+            "SuccessModal": {
+                "accept": "Accept"
+            },
+            "WarningModal": {
+                "cancel": "Cancel"
+            }
+        },
+        "cuts": {
+            "CutInstructionRow": {
+                "add": "Add new cut",
+                "delete": "Delete cut"
+            },
+            "CutInstructionTable": {
+                "caption": "List of cuts to make",
+                "name": "Name",
+                "quantity": "Quantity",
+                "base": "Base",
+                "height": "Height",
+                "material": "Material",
+                "orientation": "Orientation",
+                "actions": "Actions",
+                "errors": {
+                    "title": "Errors",
+                    "missingPlaques": "At least one plaque selected is needed for this tool to work",
+                    "missingMaterials": "All cuts must have a material selected from the dropdown",
+                    "missingValues": "All highlighted fields are required"
+                },
+                "delete": {
+                    "title": "Delete cuts",
+                    "subtitle": "Are you sure you want to delete all cuts?"
+                },
+                "success": {
+                    "title": "Successful operation!",
+                    "subtitle": "Select the results tab to check the optimization"
+                },
+                "optimize": "Optimize"
+            }
+        },
+        "order": {
+            "OrderResults": {
+                "height":"Height ({{units}})",
+                "leftovers": "Leftovers",
+                "noOptimization": "There are no optimizations to display",
+                "pieces": "Pieces",
+                "plaque": "Plaque",
+                "usedPlaques": {
+                    "one": "Only one plaque is required to execute the project",
+                    "multiple": "{{count}} plaques are required to execute the project"
+                },
+                "width": "Base ({{units}})"
+            }
+        },
+        "pages": {
+            "AboutPage": {
+                "title": "About",
+                "subtitle": "General product information",
+                "table": {
+                    "description": "Description",
+                    "value": "Value",
+                    "product": "Product",
+                    "version": "Version",
+                    "author": "Author"
+                }
+            },
+            "InstructionsPage": {
+                "title": "Instructions",
+                "subtitle": "Details about usage of this tool",
+                "bullets": {
+                    "1": "Use the 'Plaques Selection' section to choose the plaques to be used.",
+                    "2": "Complete the necessary information in 'Cut Instructions' section according to your needs.",
+                    "3": "Optionally, check the 'Preview' section as a summary of what is going to happen.",
+                    "4": "Press on the 'Optimize' button to execute the cuts and go to 'Results' section at the end of the tabs."
+                }
+            },
+            "MaterialPage": {
+                "title": "Materials",
+                "subtitle": "Available materials catalog for optimizer"
+            },
+            "OptimizerPage": {
+                "title": "Cut Optimizer",
+                "subtitle": "Arrange MFD cuts using a simple greedy algorithm",
+                "steps": {
+                    "1": {
+                        "title": "Plaques Selection ({{count}})",
+                        "subtitle": "Indicate which plaques will be selectable in the cut process",
+                        "warning": {
+                            "title": "Warning",
+                            "subtitle": "It is not posible to deselect this plaque because there are cuts using it."
+                        }
+                    },
+                    "2": {
+                        "title": "Cut Instructions ({{count}})",
+                        "subtitle": "Indicate which cuts you need to get over the plaques"
+                    },
+                    "3": {
+                        "title": "Preview",
+                        "subtitle": ""
+                    },
+                    "4": {
+                        "title": {
+                            "none": "Results",
+                            "positive": "Results ({{count}})"
+                        },
+                        "subtitle": "Generated output for cutting process"
+                    }
+                }
+            },
+            "PlaquePage": {
+                "title": "Plaques",
+                "subtitle": "Available plaques catalog for optimizer"
+            },
+            "SettingsPage": {
+                "title": "Configuration",
+                "subtitle": "Configurable options for optimizer",
+                "table": {
+                    "description": "Description",
+                    "value": "Value"
+                }
+            }
+        },
+        "plaques": {
+            "PlaqueCard": {
+                "details": "Details",
+                "base": "Base",
+                "height": "Height",
+                "thickness": "Thickness",
+                "select": "Select",
+                "deselect": "Deselect",
+                "inUse": "In use",
+                "available": "Available"
+            },
+            "PlaqueList": {
+                "description": "Description",
+                "brand": "Brand",
+                "thickness": "Thickness ({{units}})",
+                "base": "Base ({{units}})",
+                "height": "Height ({{units}})",
+                "selectedPlaques": {
+                    "one": "Only one plaque selected to optimize",
+                    "multiple":"{{count}} selected plaques to optimize"
+                }
+            }
+        }
+    },
+    "models": {
+        "Settings": {
+            "units": "Units of Measurement",
+            "mmToPx": "Conversion factor from millimeters to pixels",
+            "minCut": "Minimum Cut Distance",
+            "language": "Languaje",
+            "lastUpdate": "Last Update"
+        }
+    }
+}

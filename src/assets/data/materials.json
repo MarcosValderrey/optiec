@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "active": true,
+        "name": "blanco",
+        "description": "Blanco",
+        "image": "/images/materials/mdf-arauco-blanco.jpg"
+    },
+    {
+        "id": 2,
+        "active": true,
+        "name": "paraiso",
+        "description": "Paraíso",
+        "image": "/images/materials/mdf-arauco-paraiso.jpg"
+    },
+    {
+        "id": 3,
+        "active": true,
+        "name": "kiri",
+        "description": "Kiri",
+        "image": "/images/materials/mdf-arauco-kiri.jpg"
+    },
+    {
+        "id": 4,
+        "active": true,
+        "name": "gris-tapir",
+        "description": "Gris Tapir",
+        "image": "/images/materials/mdf-arauco-gris-tapir.jpg"
+    },
+    {
+        "id": 5,
+        "active": true,
+        "name": "gris-caliza",
+        "description": "Gris Caliza",
+        "image": "/images/materials/mdf-arauco-gris-caliza.jpg"
+    },
+    {
+        "id": 6,
+        "active": true,
+        "name": "gris-basalto",
+        "description": "Gris Basalto",
+        "image": "/images/materials/mdf-arauco-gris-basalto.jpg"
+    },
+    {
+        "id": 7,
+        "active": true,
+        "name": "amatista",
+        "description": "Amatista",
+        "image": "/images/materials/mdf-arauco-amatista.jpg"
+    },
+    {
+        "id": 8,
+        "active": true,
+        "name": "jade",
+        "description": "Jade",
+        "image": "/images/materials/mdf-arauco-jade.jpg"
+    },
+    {
+        "id": 9,
+        "active": true,
+        "name": "sauco",
+        "description": "Sauco",
+        "image": "/images/materials/mdf-arauco-sauco.jpg"
+    },
+    {
+        "id": 10,
+        "active": false,
+        "name": "scotch",
+        "description": "Scotch",
+        "image": "/images/materials/mdf-arauco-scotch.jpg"
+    },
+    {
+        "id": 11,
+        "active": false,
+        "name": "pinot-gris",
+        "description": "Pinot Gris",
+        "image": "/images/materials/mdf-arauco-pinot-gris.jpg"
+    },
+    {
+        "id": 12,
+        "active": false,
+        "name": "merlot",
+        "description": "Merlot",
+        "image": "/images/materials/mdf-arauco-merlot.jpg"
+    },
+    {
+        "id": 13,
+        "active": false,
+        "name": "camellia",
+        "description": "Camellia",
+        "image": "/images/materials/mdf-arauco-camellia.jpg"
+    },
+    {
+        "id": 14,
+        "active": false,
+        "name": "amaranto",
+        "description": "Amaranto",
+        "image": "/images/materials/mdf-arauco-amaranto.jpg"
+    },
+    {
+        "id": 15,
+        "active": false,
+        "name": "amberes",
+        "description": "Amberes",
+        "image": "/images/materials/mdf-arauco-amberes.jpg"
+    },
+    {
+        "id": 16,
+        "active": false,
+        "name": "haya",
+        "description": "Haya",
+        "image": "/images/materials/mdf-arauco-haya.jpg"
+    },
+    {
+        "id": 17,
+        "active": true,
+        "name": "eucalipto",
+        "description": "Eucalipto",
+        "image": "/images/materials/eucalipto.jpg"
+    }
+]

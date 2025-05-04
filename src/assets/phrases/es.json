@@ -1,0 +1,179 @@
+{
+    "App": {
+        "paths": {
+            "optimizer": "/optimizador",
+            "instructions": "/instrucciones",
+            "materials": "/materiales",
+            "plaques": "/placas",
+            "configuration": "/configuracion",
+            "details": "/detalles"
+        }
+    },
+    "components": {
+        "common": {
+            "DeleteModal": {
+                "cancel": "Cancelar",
+                "delete": "Eliminar"
+            },
+            "Header": {
+                "optimizer": "Optimizador",
+                "instructions": "Instrucciones",
+                "materials": "Materiales",
+                "plaques": "Placas",
+                "configuration": "Configuración",
+                "about": "Detalles"
+            },
+            "SuccessModal": {
+                "accept": "Aceptar"
+            },
+            "WarningModal": {
+                "cancel": "Cancelar"
+            }
+        },
+        "cuts": {
+            "CutInstructionRow": {
+                "add": "Agregar nuevo corte",
+                "delete": "Eliminar corte"
+            },
+            "CutInstructionTable": {
+                "caption": "Lista de cortes a realizar",
+                "name": "Nombre",
+                "quantity": "Cantidad",
+                "base": "Base ({{units}})",
+                "height": "Altura ({{units}})",
+                "material": "Material",
+                "orientation": "Orientación",
+                "actions": "Acciones",
+                "errors": {
+                    "title": "Errores",
+                    "missingPlaques": "Necesita seleccionar al menos una placa para trabajar",
+                    "missingMaterials": "Todos los cortes deben tener un material seleccionado",
+                    "missingValues": "Todos los campos destacados son requeridos"
+                },
+                "delete": {
+                    "title": "Eliminar cortes",
+                    "subtitle": "Seguro desea eliminar todos los cortes?"
+                },
+                "success": {
+                    "title": "Operación realizada con éxito!",
+                    "subtitle": "Seleccione la pestaña de resultados para consultar la optimización"
+                },
+                "optimize": "Optimizar"
+            }
+        },
+        "order": {
+            "OrderResults": {
+                "height":"Altura ({{units}})",
+                "leftovers": "Sobrantes",
+                "noOptimization": "No hay optimizaciones disponibles para mostrar",
+                "pieces": "Piezas",
+                "plaque": "Placa",
+                "usedPlaques": {
+                    "one": "Se requiere una sola placa para realizar el proyecto",
+                    "multiple": "Se requieren {{count}} placas para realizar el proyecto"
+                },
+                "width": "Base ({{units}})"
+            }
+        },
+        "pages": {
+            "AboutPage": {
+                "title": "Detalles",
+                "subtitle": "Información general del producto",
+                "table": {
+                    "description": "Descripción",
+                    "value": "Valor",
+                    "product": "Producto",
+                    "version": "Versión",
+                    "author": "Autor"
+                }
+            },
+            "InstructionsPage": {
+                "title": "Instrucciones",
+                "subtitle": "Detalles sobre cómo utilizar el optimizador",
+                "bullets": {
+                    "1": "Utilice la sección 'Selección de Placas' para elegir cuáles serán utilizadas en los cortes.",
+                    "2": "Complete la información necesaria en la sección 'Indicación de Cortes' de acuerdo a sus necesidades.",
+                    "3": "Opcionalmente, consulte la sección 'Vista Previa' a modo de resumen.",
+                    "4": "Presione el botón 'Optimizar' para ejecutar los cortes y diríjase a la sección 'Resultados' al final de las pestañas."
+                }
+            },
+            "MaterialPage": {
+                "title": "Materiales",
+                "subtitle": "Catálogo de materiales disponibles para optimizar"
+            },
+            "OptimizerPage": {
+                "title": "Optimizador de Corte",
+                "subtitle": "Dispone cortes en MDF utilizando un algoritmo greedy simple",
+                "steps": {
+                    "1": {
+                        "title": "Selección de Placas ({{count}})",
+                        "subtitle": "Indicá qué placas vas a utilizar en el proceso de corte",
+                        "warning": {
+                            "title": "Advertencia",
+                            "subtitle": "No es posible deseleccionar esta placa porque un corte está haciendo uso de ella."
+                        }
+                    },
+                    "2": {
+                        "title": "Indicación de Cortes ({{count}})",
+                        "subtitle": "Indicá qué cortes necesitas realizar sobre las placas"
+                    },
+                    "3": {
+                        "title": "Vista Previa",
+                        "subtitle": ""
+                    },
+                    "4": {
+                        "title": {
+                            "none": "Resultados",
+                            "positive": "Resultados ({{count}})"
+                        },
+                        "subtitle": "Cortes generados por el optimizador"
+                    }
+                }
+            },
+            "PlaquePage": {
+                "title": "Placas",
+                "subtitle": "Catálogo de placas disponibles para optimizar"
+            },
+            "SettingsPage": {
+                "title": "Configuración",
+                "subtitle": "Opciones configurables del optimizador",
+                "table": {
+                    "description": "Descripción",
+                    "value": "Valor"
+                }
+            }
+        },
+        "plaques": {
+            "PlaqueCard": {
+                "details": "Detalles",
+                "base": "Base",
+                "height": "Altura",
+                "thickness": "Espesor",
+                "select": "Seleccionar",
+                "deselect": "Deseleccionar",
+                "inUse": "En uso",
+                "available": "Disponible"
+            },
+            "PlaqueList": {
+                "description": "Descripción",
+                "brand": "Marca",
+                "thickness": "Espesor ({{units}})",
+                "base": "Base ({{units}})",
+                "height": "Altura ({{units}})",
+                "selectedPlaques": {
+                    "one": "Una sola placa seleccionada para optimizar",
+                    "multiple": "{{count}} placas seleccionadas para optimizar"
+                }
+            }
+        }
+    },
+    "models": {
+        "Settings": {
+            "units": "Unidad de Medida",
+            "mmToPx": "Factor de conversion de milímetros a pixeles",
+            "minCut": "Distancia Mínima de Corte",
+            "language": "Lenguaje",
+            "lastUpdate": "Última Actualización"
+        }
+    }
+}
