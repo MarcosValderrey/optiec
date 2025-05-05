@@ -12,6 +12,7 @@ function PlaqueList({ plaqueList }) {
     // State
     const { settings, setSettings } = useSettings();
     const units = settings.units.value;
+    const displayUnits = settings.displayUnits.value;
 
     var caption = null;
     if (plaqueList) {
@@ -25,6 +26,24 @@ function PlaqueList({ plaqueList }) {
     // Render
     let render = null;
     if (plaqueList.length > 0) {
+        // Thickness header
+        var thicknessHeader = phrases.get('components.plaques.PlaqueList.thickness.units.no');
+        if (displayUnits) {
+            thicknessHeader = phrases.get('components.plaques.PlaqueList.thickness.units.yes', { units: units });
+        }
+
+        // Base header
+        var baseHeader = phrases.get('components.plaques.PlaqueList.base.units.no');
+        if (displayUnits) {
+            baseHeader = phrases.get('components.plaques.PlaqueList.base.units.yes', { units: units });
+        }
+
+        // Height header
+        var heightHeader = phrases.get('components.plaques.PlaqueList.height.units.no');
+        if (displayUnits) {
+            heightHeader = phrases.get('components.plaques.PlaqueList.height.units.yes', { units: units });
+        }
+
         render = <Table striped bordered responsive>
             <caption>{caption}</caption>
             <thead>
@@ -32,9 +51,9 @@ function PlaqueList({ plaqueList }) {
                     <th className='o-width-2'>#</th>
                     <th>{phrases.get('components.plaques.PlaqueList.description')}</th>
                     <th>{phrases.get('components.plaques.PlaqueList.brand')}</th>
-                    <th>{phrases.get('components.plaques.PlaqueList.thickness', { units: units })}</th>
-                    <th>{phrases.get('components.plaques.PlaqueList.base', { units: units })}</th>
-                    <th>{phrases.get('components.plaques.PlaqueList.height', { units: units })}</th>
+                    <th>{thicknessHeader}</th>
+                    <th>{baseHeader}</th>
+                    <th>{heightHeader}</th>
                 </tr>
             </thead>
             <tbody>

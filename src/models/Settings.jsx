@@ -51,10 +51,11 @@ class Settings {
      */
     constructor() {
         this.units = new Setting(1, 'units', 'models.Settings.units', 'mm');
-        this.mmToPx = new Setting(2, 'mmToPx', 'models.Settings.mmToPx', 0.25);
-        this.minCut = new Setting(3, 'minCut', 'models.Settings.minCut', 100);
-        this.language = new Setting(4, 'language', 'models.Settings.language', navigator.language);
-        this.lastUpdate = new Setting(5, 'lastUpdate', 'models.Settings.lastUpdate', new Date());
+        this.displayUnits = new Setting(2, 'displayUnits', 'models.Settings.displayUnits', 0);
+        this.mmToPx = new Setting(3, 'mmToPx', 'models.Settings.mmToPx', 0.25);
+        this.minCut = new Setting(4, 'minCut', 'models.Settings.minCut', 100);
+        this.language = new Setting(5, 'language', 'models.Settings.language', navigator.language);
+        this.lastUpdate = new Setting(6, 'lastUpdate', 'models.Settings.lastUpdate', new Date());
     }
 
     /**
@@ -65,6 +66,7 @@ class Settings {
     clone() {
         var settings = new Settings();
         settings.units = this.units.clone();
+        settings.displayUnits = this.displayUnits.clone();
         settings.mmToPx = this.mmToPx.clone();
         settings.minCut = this.minCut.clone();
         settings.language = this.language.clone();

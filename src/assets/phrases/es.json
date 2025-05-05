@@ -39,8 +39,18 @@
                 "caption": "Lista de cortes a realizar",
                 "name": "Nombre",
                 "quantity": "Cantidad",
-                "base": "Base ({{units}})",
-                "height": "Altura ({{units}})",
+                "base": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                },
+                "height": {
+                    "units": {
+                        "yes": "Altura ({{units}})",
+                        "no": "Altura"
+                    }
+                },
                 "material": "Material",
                 "orientation": "Orientación",
                 "actions": "Acciones",
@@ -66,7 +76,12 @@
                 "noPreview": "No hay vista previa disponible para mostrar"
             },
             "OrderResults": {
-                "height":"Altura ({{units}})",
+                "height": {
+                    "units": {
+                        "yes":"Altura ({{units}})",
+                        "no": "Altura"
+                    }
+                },
                 "leftovers": "Sobrantes",
                 "noOptimization": "No hay optimizaciones disponibles para mostrar",
                 "pieces": "Piezas",
@@ -75,7 +90,12 @@
                     "one": "Se requiere una sola placa para realizar el proyecto",
                     "multiple": "Se requieren {{count}} placas para realizar el proyecto"
                 },
-                "width": "Base ({{units}})"
+                "width": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                }
             }
         },
         "pages": {
@@ -171,9 +191,24 @@
             "PlaqueList": {
                 "description": "Descripción",
                 "brand": "Marca",
-                "thickness": "Espesor ({{units}})",
-                "base": "Base ({{units}})",
-                "height": "Altura ({{units}})",
+                "thickness": {
+                    "units": {
+                        "yes": "Espesor ({{units}})",
+                        "no": "Espesor"
+                    }
+                },
+                "base": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                },
+                "height": {
+                    "units": {
+                        "yes": "Altura ({{units}})",
+                        "no": "Altura"
+                    }
+                },
                 "selectedPlaques": {
                     "one": "Una sola placa seleccionada para optimizar",
                     "multiple": "{{count}} placas seleccionadas para optimizar"
@@ -182,8 +217,13 @@
         }
     },
     "models": {
+        "Booleans": {
+            "yes": "Sí",
+            "no": "No"
+        },
         "Settings": {
             "units": "Unidad de Medida",
+            "displayUnits": "Mostrar unidades de medida",
             "mmToPx": "Factor de conversion de milímetros a pixeles",
             "minCut": "Distancia Mínima de Corte",
             "language": "Lenguaje",

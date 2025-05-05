@@ -28,6 +28,7 @@ function CutInstructionTable({ order, onAddCut, onRemoveCut, onUpdateCut, onRese
     const [ showDeleteModal, setShowDeleteModal ] = useState(false);
     const [ showSuccessModal, setShowSuccessModal ] = useState(false);
     const units = settings.units.value;
+    const displayUnits = settings.displayUnits.value;
 
     // Events
     function onOrderDelete(event) {
@@ -88,6 +89,18 @@ function CutInstructionTable({ order, onAddCut, onRemoveCut, onUpdateCut, onRese
         setErrors([]);
     }
 
+    // Base header
+    var baseHeader = phrases.get('components.cuts.CutInstructionTable.base.units.no');
+    if (displayUnits) {
+        baseHeader = phrases.get('components.cuts.CutInstructionTable.base.units.yes', { units: units });
+    }
+
+    // Height header
+    var heightHeader = phrases.get('components.cuts.CutInstructionTable.height.units.no');
+    if (displayUnits) {
+        heightHeader = phrases.get('components.cuts.CutInstructionTable.height.units.yes', { units: units });
+    }
+
     // Render
     return (
         <Form noValidate validated={validated} onSubmit={onOrderSubmit}>
@@ -97,9 +110,9 @@ function CutInstructionTable({ order, onAddCut, onRemoveCut, onUpdateCut, onRese
                     <tr>
                         <th className='o-width-2'>#</th>
                         <th className='o-width-25'>{phrases.get('components.cuts.CutInstructionTable.name')}</th>
-                        <th className='o-width-10'>{phrases.get('components.cuts.CutInstructionTable.quantity')}</th>
-                        <th className='o-width-10'>{phrases.get('components.cuts.CutInstructionTable.base', { units: units })}</th>
-                        <th className='o-width-10'>{phrases.get('components.cuts.CutInstructionTable.height', { units: units })}</th>
+                        <th className='o-width-8em'>{phrases.get('components.cuts.CutInstructionTable.quantity')}</th>
+                        <th className='o-width-8em'>{baseHeader}</th>
+                        <th className='o-width-8em'>{heightHeader}</th>
                         <th>{phrases.get('components.cuts.CutInstructionTable.material')}</th>
                         {/* <th>{phrases.get('components.cuts.CutInstructionTable.orientation')}</th> */}
                         <th className='o-width-10'>{phrases.get('components.cuts.CutInstructionTable.actions')}</th>

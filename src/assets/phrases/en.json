@@ -39,8 +39,18 @@
                 "caption": "List of cuts to make",
                 "name": "Name",
                 "quantity": "Quantity",
-                "base": "Base",
-                "height": "Height",
+                "base": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                },
+                "height": {
+                    "units": {
+                        "yes": "Height ({{units}})",
+                        "no": "Height"
+                    }
+                },
                 "material": "Material",
                 "orientation": "Orientation",
                 "actions": "Actions",
@@ -66,7 +76,12 @@
                 "noPreview": "There is no preview to display"
             },
             "OrderResults": {
-                "height":"Height ({{units}})",
+                "height": {
+                    "units": {
+                        "yes": "Height ({{units}})",
+                        "no": "Height"
+                    }
+                },
                 "leftovers": "Leftovers",
                 "noOptimization": "There are no optimizations to display",
                 "pieces": "Pieces",
@@ -75,7 +90,12 @@
                     "one": "Only one plaque is required to execute the project",
                     "multiple": "{{count}} plaques are required to execute the project"
                 },
-                "width": "Base ({{units}})"
+                "width": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                }
             }
         },
         "pages": {
@@ -171,9 +191,24 @@
             "PlaqueList": {
                 "description": "Description",
                 "brand": "Brand",
-                "thickness": "Thickness ({{units}})",
-                "base": "Base ({{units}})",
-                "height": "Height ({{units}})",
+                "thickness": {
+                    "units": {
+                        "yes": "Thickness ({{units}})",
+                        "no": "Thickness"
+                    }
+                },
+                "base": {
+                    "units": {
+                        "yes": "Base ({{units}})",
+                        "no": "Base"
+                    }
+                },
+                "height": {
+                    "units": {
+                        "yes": "Height ({{units}})",
+                        "no": "Height"
+                    }
+                },
                 "selectedPlaques": {
                     "one": "Only one plaque selected to optimize",
                     "multiple":"{{count}} selected plaques to optimize"
@@ -182,6 +217,10 @@
         }
     },
     "models": {
+        "Booleans": {
+            "yes": "Yes",
+            "no": "No"
+        },
         "Settings": {
             "units": "Units of Measurement",
             "mmToPx": "Conversion factor from millimeters to pixels",

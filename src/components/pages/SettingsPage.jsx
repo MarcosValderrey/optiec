@@ -104,6 +104,16 @@ function SettingsPage() {
                             </tr>
                             */}
 
+                            {/* Display units */}
+                            <tr>
+                                <td>{phrases.get(settings.displayUnits.phrase)}</td>
+                                <td>
+                                    {
+                                        settings.displayUnits.value ? phrases.get('models.Booleans.yes') : phrases.get('models.Booleans.no')
+                                    }
+                                </td>
+                            </tr>
+
                             {/* Language */}
                             <tr>
                                 <td>{phrases.get(settings.language.phrase)}</td>

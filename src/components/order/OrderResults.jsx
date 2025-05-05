@@ -14,6 +14,7 @@ function OrderResults({ order }) {
     // State
     const { settings, setSettings } = useSettings();
     const units = settings.units.value;
+    const displayUnits = settings.displayUnits.value;
 
     var caption = null;
     if (order.optimized && order.optimized.cutResults) {
@@ -27,14 +28,26 @@ function OrderResults({ order }) {
     // Render
     var render = null;
     if (order.optimized && order.optimized.cutResults.length > 0) {
+        // Base header
+        var baseHeader = phrases.get('components.order.OrderResults.width.units.no');
+        if (displayUnits) {
+            baseHeader = phrases.get('components.order.OrderResults.width.units.yes', { units: units });
+        }
+
+        // Height header
+        var heightHeader = phrases.get('components.order.OrderResults.height.units.no');
+        if (displayUnits) {
+            heightHeader = phrases.get('components.order.OrderResults.height.units.yes', { units: units });
+        }
+
         var details = <Table striped bordered responsive>
             <caption>{caption}</caption>
             <thead>
                 <tr>
                     <th className='o-width-2'>#</th>
                     <th>{phrases.get('components.order.OrderResults.plaque')}</th>
-                    <th>{phrases.get('components.order.OrderResults.width', { units: units })}</th>
-                    <th>{phrases.get('components.order.OrderResults.height', { units: units })}</th>
+                    <th>{baseHeader}</th>
+                    <th>{heightHeader}</th>
                     <th>{phrases.get('components.order.OrderResults.pieces')}</th>
                     <th>{phrases.get('components.order.OrderResults.leftovers')}</th>
                 </tr>
