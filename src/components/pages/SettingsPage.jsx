@@ -62,7 +62,7 @@ function SettingsPage() {
             </Row>
             <Row>
                 <Col>
-                    <Table striped bordered>
+                    <Table striped bordered responsive>
                         <thead>
                             <tr>
                                 <th className='w-50'>{phrases.get('components.pages.SettingsPage.table.description')}</th>

@@ -91,7 +91,7 @@ function CutInstructionTable({ order, onAddCut, onRemoveCut, onUpdateCut, onRese
     // Render
     return (
         <Form noValidate validated={validated} onSubmit={onOrderSubmit}>
-            <Table striped bordered>
+            <Table striped bordered responsive>
                 <caption>{phrases.get('components.cuts.CutInstructionTable.caption')}</caption>
                 <thead>
                     <tr>

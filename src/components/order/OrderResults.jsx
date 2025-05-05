@@ -27,7 +27,7 @@ function OrderResults({ order }) {
     // Render
     var render = null;
     if (order.optimized && order.optimized.cutResults.length > 0) {
-        var details = <Table striped bordered>
+        var details = <Table striped bordered responsive>
             <caption>{caption}</caption>
             <thead>
                 <tr>

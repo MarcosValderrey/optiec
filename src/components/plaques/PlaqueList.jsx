@@ -25,7 +25,7 @@ function PlaqueList({ plaqueList }) {
     // Render
     let render = null;
     if (plaqueList.length > 0) {
-        render = <Table striped bordered>
+        render = <Table striped bordered responsive>
             <caption>{caption}</caption>
             <thead>
                 <tr>
