@@ -48,12 +48,12 @@ function PlaqueList({ plaqueList }) {
             <caption>{caption}</caption>
             <thead>
                 <tr>
-                    <th className='o-width-2'>#</th>
-                    <th>{phrases.get('components.plaques.PlaqueList.description')}</th>
-                    <th>{phrases.get('components.plaques.PlaqueList.brand')}</th>
-                    <th>{thicknessHeader}</th>
-                    <th>{baseHeader}</th>
-                    <th>{heightHeader}</th>
+                    <th>#</th>
+                    <th className='o-width-15em'>{phrases.get('components.plaques.PlaqueList.description')}</th>
+                    <th className='o-width-8em'>{phrases.get('components.plaques.PlaqueList.brand')}</th>
+                    <th className='o-width-8em'>{thicknessHeader}</th>
+                    <th className='o-width-8em'>{baseHeader}</th>
+                    <th className='o-width-8em'>{heightHeader}</th>
                 </tr>
             </thead>
             <tbody>

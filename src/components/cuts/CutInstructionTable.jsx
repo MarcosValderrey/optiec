@@ -108,14 +108,14 @@ function CutInstructionTable({ order, onAddCut, onRemoveCut, onUpdateCut, onRese
                 <caption>{phrases.get('components.cuts.CutInstructionTable.caption')}</caption>
                 <thead>
                     <tr>
-                        <th className='o-width-2'>#</th>
-                        <th className='o-width-25'>{phrases.get('components.cuts.CutInstructionTable.name')}</th>
+                        <th>#</th>
+                        <th className='o-width-15em'>{phrases.get('components.cuts.CutInstructionTable.name')}</th>
                         <th className='o-width-8em'>{phrases.get('components.cuts.CutInstructionTable.quantity')}</th>
                         <th className='o-width-8em'>{baseHeader}</th>
                         <th className='o-width-8em'>{heightHeader}</th>
                         <th>{phrases.get('components.cuts.CutInstructionTable.material')}</th>
                         {/* <th>{phrases.get('components.cuts.CutInstructionTable.orientation')}</th> */}
-                        <th className='o-width-10'>{phrases.get('components.cuts.CutInstructionTable.actions')}</th>
+                        <th>{phrases.get('components.cuts.CutInstructionTable.actions')}</th>
                     </tr>
                 </thead>
                 <tbody>

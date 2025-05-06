@@ -44,12 +44,12 @@ function OrderResults({ order }) {
             <caption>{caption}</caption>
             <thead>
                 <tr>
-                    <th className='o-width-2'>#</th>
-                    <th>{phrases.get('components.order.OrderResults.plaque')}</th>
-                    <th>{baseHeader}</th>
-                    <th>{heightHeader}</th>
-                    <th>{phrases.get('components.order.OrderResults.pieces')}</th>
-                    <th>{phrases.get('components.order.OrderResults.leftovers')}</th>
+                    <th>#</th>
+                    <th className='o-width-15em'>{phrases.get('components.order.OrderResults.plaque')}</th>
+                    <th className='o-width-8em'>{baseHeader}</th>
+                    <th className='o-width-8em'>{heightHeader}</th>
+                    <th className='o-width-8em'>{phrases.get('components.order.OrderResults.pieces')}</th>
+                    <th className='o-width-8em'>{phrases.get('components.order.OrderResults.leftovers')}</th>
                 </tr>
             </thead>
             <tbody>

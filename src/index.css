@@ -1,19 +1,16 @@
-.o-width-2 {
-    width: 2%;
+/* Common */
+.o-width-5em {
+    min-width: 5em;
 }
-.o-width-5 {
-    width: 5%;
-}
-.o-width-10 {
-    width: 10%;
-}
-.o-width-25 {
-    width: 25%;
-}
-.o-width-100 {
-    width: 100%;
-}
-
 .o-width-8em {
-    width: 8em;
+    min-width: 8em;
+}
+.o-width-10em {
+    min-width: 10em;
+}
+.o-width-15em {
+    min-width: 15em;
+}
+.o-width-20em {
+    min-width: 20em;
 }
